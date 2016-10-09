@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D239E67C1DAA0C5400A04DDB /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D239E67B1DAA0C5400A04DDB /* UIColor+Hex.m */; };
 		D2438FC31DA3A2ED0069237A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2438FC21DA3A2ED0069237A /* main.m */; };
 		D2438FC61DA3A2ED0069237A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2438FC51DA3A2ED0069237A /* AppDelegate.m */; };
 		D2438FC91DA3A2ED0069237A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2438FC81DA3A2ED0069237A /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D239E67A1DAA0C5400A04DDB /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		D239E67B1DAA0C5400A04DDB /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		D2438FBE1DA3A2ED0069237A /* meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meituan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2438FC21DA3A2ED0069237A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2438FC41DA3A2ED0069237A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D239E67D1DAA0C5900A04DDB /* category */ = {
+			isa = PBXGroup;
+			children = (
+				D239E67A1DAA0C5400A04DDB /* UIColor+Hex.h */,
+				D239E67B1DAA0C5400A04DDB /* UIColor+Hex.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
 		D2438FB51DA3A2ED0069237A = {
 			isa = PBXGroup;
 			children = (
+				D239E67D1DAA0C5900A04DDB /* category */,
 				D2438FC01DA3A2ED0069237A /* meituan */,
 				D2438FDA1DA3A2ED0069237A /* meituanTests */,
 				D2438FE51DA3A2ED0069237A /* meituanUITests */,
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2438FC91DA3A2ED0069237A /* ViewController.m in Sources */,
+				D239E67C1DAA0C5400A04DDB /* UIColor+Hex.m in Sources */,
 				D2438FC61DA3A2ED0069237A /* AppDelegate.m in Sources */,
 				D2438FC31DA3A2ED0069237A /* main.m in Sources */,
 			);
@@ -498,6 +512,7 @@
 				D2438FED1DA3A2ED0069237A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2438FEE1DA3A2ED0069237A /* Build configuration list for PBXNativeTarget "meituanTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +521,7 @@
 				D2438FF01DA3A2ED0069237A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2438FF11DA3A2ED0069237A /* Build configuration list for PBXNativeTarget "meituanUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +530,7 @@
 				D2438FF31DA3A2ED0069237A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
