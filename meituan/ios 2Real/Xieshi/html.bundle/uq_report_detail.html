@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+
+</script>
+<meta name="viewport" content="width=320,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<style>
+html{ margin:0px; padding:0px;}
+body{ margin:0px; overflow:hidden;padding:0px; font-size:14px; font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif; color:#333; overflow-x:hidden;background:none;}
+a{ text-decoration:none; outline:none; color:#1aadbf;}
+a:hover{ text-decoration:none; outline:none; color:#f26d51;}
+arer{text-decoration:none;}
+a:active, a:visited{ outline:none;}
+p,ul,li,form,h1,h2,h3,h4,h5,h6,dl,dt,dd,img,div,table,td,th,input,textarea{ margin:0px; padding:0px;}
+h2,h3{font-size:14px;}
+input,textarea{font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif;outline:none;font-size:12px;color:#464646;}
+table,td{ border-collapse:collapse;}
+ul,li,dl,dt,dd,ol{ list-style:none;}
+img{ border:0 none;overflow:hidden; display:block;}
+em,i{font-style:normal;font-weight:normal;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.detail-switch-bar{
+	height: 50px;
+	background: url(static/resource/image/bg_detail_banner.png) repeat-x;
+	position: fixed;
+	top: 0px;
+    background-size: contain;
+	width: 100%;
+}
+.detail-switch-bar table{
+    width:100%;
+    line-height:44px;
+    font-size:15px;
+    margin-left:8px;
+}
+.detail-switch-bar-button{
+    font-size:17px;
+    color:#3598dc;
+}
+.detail-container{
+
+}
+.detail-switch-list{
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	}
+.detail-switch-ul{
+	}
+.detail-switch-li{
+	min-height: 50px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 8px;
+	background-color: white;
+	-webkit-box-shadow: 1px 2px 1px #d3d2d2;
+    padding-bottom:4px;
+
+}
+.detail-switch-title{
+	/* [disabled]font-weight: bold; */
+	color: #ababab;
+	font-size: 16px;
+    margin-left:8px;
+	}
+.detail-switch-content{
+	margin: 10px 0 0 0px;
+	font-size: 13px;
+	color: #474747;
+        margin-left:8px;
+	}
+</style>
+</head>
+
+<body>
+<div class="detail-container">
+<div class="detail-switch-bar">
+    <table>
+    <tr>
+        
+        <td weight=1 style="width:50%;overflow:hidden"><img src="static/resource/image/icon_detail_report.png" style="width:26px;height:26px;float:left;margin:8px"/>
+            <a style="float:left"class="detail-switch-bar-button" href="app://sampleList">报告结论</a></td>
+    </tr>
+    </table>
+
+</div>
+<div class="detail-switch-list">
+    <ul class="detail-switch-ul">
+    	<li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             报告编号
+            </p>
+            <p class="detail-switch-content">
+            ${Report_ID}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             委托编号
+            </p>
+            <p class="detail-switch-content">
+            ${ConSign_ID}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             检测类别
+            </p>
+            <p class="detail-switch-content">
+            ${Exam_Kind}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             工程连续号
+            </p>
+            <p class="detail-switch-content">
+            ${Project_SSN}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             委托单位
+            </p>
+            <p class="detail-switch-content">
+            ${EntrustUnitName}
+            </p>
+        </li>    	
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             工程名称
+            </p>
+            <p class="detail-switch-content">
+            ${ProJectName}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             防伪校验码
+            </p>
+            <p class="detail-switch-content">
+            ${IdentifyingCode}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             工程地址
+            </p>
+            <p class="detail-switch-content">
+            ${ProjectAddress}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             施工单位
+            </p>
+            <p class="detail-switch-content">
+            ${BuildUnitName}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             见证单位
+            </p>
+            <p class="detail-switch-content">
+            ${SuperviseUnitName}
+            </p>
+        </li>    	
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             取样人（编号）
+            </p>
+            <p class="detail-switch-content">
+            ${Sampling}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             见证人(编号)
+            </p>
+            <p class="detail-switch-content">
+            ${Witness}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             委托日期	
+            </p>
+            <p class="detail-switch-content">
+            ${DetectonDate}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             报告日期	
+            </p>
+            <p class="detail-switch-content">
+            ${Report_CreateTime}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             检测机构名	
+            </p>
+            <p class="detail-switch-content">
+            ${MemberName}
+            </p>
+        </li>    	
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             检测单位地址	
+            </p>
+            <p class="detail-switch-content">
+            ${ContactAddress}
+            </p>
+        </li>
+    </ul>
+</div>
+</div>
+</body>
+</html>

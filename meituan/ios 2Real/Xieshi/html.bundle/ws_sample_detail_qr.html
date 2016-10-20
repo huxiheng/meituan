@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+
+</script>
+<meta name="viewport" content="width=320,target-densitydpi=160,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<style>
+html{ margin:0px; padding:0px;}
+body{ margin:0px;padding:0px; font-size:14px; font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif; color:#333; overflow-x:hidden;background:none;}
+a{ text-decoration:none; outline:none; color:#1aadbf;}
+a:hover{ text-decoration:none; outline:none; color:#f26d51;}
+arer{text-decoration:none;}
+a:active, a:visited{ outline:none;}
+p,ul,li,form,h1,h2,h3,h4,h5,h6,dl,dt,dd,img,div,table,td,th,input,textarea{ margin:0px; padding:0px;}
+h2,h3{font-size:14px;}
+input,textarea{font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif;outline:none;font-size:12px;color:#464646;}
+table,td{ border-collapse:collapse;}
+ul,li,dl,dt,dd,ol{ list-style:none;}
+img{ border:0 none;overflow:hidden; display:block;}
+em,i{font-style:normal;font-weight:normal;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.detail-switch-bar{
+	height: 50px;
+	background: url(static/resource/image/bg_detail_banner.png) repeat-x;
+	position: fixed;
+	top: 0px;
+    background-size: contain;
+	width: 100%;
+}
+.detail-switch-bar table{
+    width:100%;
+    line-height:44px;
+    font-size:15px;
+    margin-left:8px;
+}
+.detail-switch-bar-button{
+    font-size:17px;
+    color:#3598dc;
+}
+.detail-container{
+
+}
+.detail-switch-list{
+	height: 100%;
+	width: 100%;
+    text-align: center;
+    background-color: #f5f5f5;
+    /*margin-top:50px;*/
+	}
+.detail-switch-ul{
+    margin:0 auto;
+    width: 94%;
+	}
+.detail-switch-li{
+	min-height: 50px;
+	width: 100%;
+	text-align:initial;
+	margin-bottom: 8px;
+	background-color: white;
+	-webkit-box-shadow: 1px 2px 1px #d3d2d2;
+    padding-bottom:4px;
+
+}
+.detail-switch-title{
+	/* [disabled]font-weight: bold; */
+	color: #ababab;
+	font-size: 16px;
+    margin-left:8px;
+	}
+.detail-switch-content{
+	margin: 10px 0 0 0px;
+	font-size: 13px;
+	color: #474747;
+    margin-left:16px;
+	}
+.detail-header{
+	position:fixed;
+	-webkit-box-shadow: 1px 2px 1px #d3d2d2;
+	margin-bottom: 2px;
+	padding-bottom:4px;
+	background: white;
+	width: 100%;
+	height: 44px;
+}
+.detail-header-title{
+	line-height: 50px;
+	margin-left: 18px;
+	font-size: 16px;
+	color: #ababab;
+}
+</style>
+
+</head>
+
+<body>
+<div class="detail-container">
+<div class="detail-header">
+	<p class="detail-header-title"><span >条码号：</span><span style="color: #474747;">${QR_Code}</span></p>
+</div>
+<div style="clear:both"></div>
+<div class="detail-switch-list">
+    <ul class="detail-switch-ul">
+    	<li style="height:60px;"></li>
+    	<li class="detail-switch-li"><p class="detail-switch-title">检测合同登记号</p><p class="detail-switch-content">${Contract_SignNo}</p></li>
+        <li class="detail-switch-li"><p class="detail-switch-title">施工单位</p><p class="detail-switch-content">${BuildUnitName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">工地名称</p><p class="detail-switch-content">${ProjectName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">标识编号</p><p class="detail-switch-content">${Sample_BsId}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">大类</p><p class="detail-switch-content">${KindName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">项目</p><p class="detail-switch-content">${ItemName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">规格</p><p class="detail-switch-content">${SpecName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">样品名称</p><p class="detail-switch-content">${SampleName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">备案证</p><p class="detail-switch-content">${Record_Certificate}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">强度/等级</p><p class="detail-switch-content">${GradeName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">使用部位</p><p class="detail-switch-content">${ProJect_Part}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">生产厂家</p><p class="detail-switch-content">${Produce_Factory}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">成型日期</p><p class="detail-switch-content">${Molding_Date}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">龄期</p><p class="detail-switch-content">${AgeTime}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">检测参数</p><p class="detail-switch-content">${Exam_Parameter_Cn}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">备注</p><p class="detail-switch-content">${Memo}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">委托编号</p><p class="detail-switch-content">${ConSign_ID}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">样品编号</p><p class="detail-switch-content">${Sample_ID}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">检测日期</p><p class="detail-switch-content">${DetectonDate}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">样品状态</p><p class="detail-switch-content">${Sample_Status}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">产品标准</p><p class="detail-switch-content">${SampleJudge}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">样品登记时间</p><p class="detail-switch-content">${CreateDateTime}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">报告日期</p><p class="detail-switch-content">${ReportDate}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">报告编号</p><p class="detail-switch-content">${ReportNumber}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">检测结果</p><p class="detail-switch-content">${Exam_Result}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">检测单位</p><p class="detail-switch-content">${DetectionUnitName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">工地地址</p><p class="detail-switch-content">${ProjectAddress}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">工地所属区县</p><p class="detail-switch-content">${AreaKey}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">委托单位</p><p class="detail-switch-content">${ConstructUnitName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">监理单位</p><p class="detail-switch-content">${SuperviseUnitName}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">报建编号</p><p class="detail-switch-content">${BuildingReportNumber}</p></li>
+<li class="detail-switch-li"><p class="detail-switch-title">检测单位会员编号</p><p class="detail-switch-content">${MemberCode}</p></li>
+   </ul>
+</div>
+</div>
+</body>
+</html>

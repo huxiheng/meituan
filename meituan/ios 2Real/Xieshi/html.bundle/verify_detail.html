@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+
+</script>
+<meta name="viewport" content="width=320,target-densitydpi=160,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<style>
+html{ margin:0px; padding:0px;}
+body{ margin:0px;padding:0px; font-size:14px; font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif; color:#333; overflow-x:hidden;background:none;}
+a{ text-decoration:none; outline:none; color:#1aadbf;}
+a:hover{ text-decoration:none; outline:none; color:#f26d51;}
+arer{text-decoration:none;}
+a:active, a:visited{ outline:none;}
+p,ul,li,form,h1,h2,h3,h4,h5,h6,dl,dt,dd,img,div,table,td,th,input,textarea{ margin:0px; padding:0px;}
+h2,h3{font-size:14px;}
+input,textarea{font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif;outline:none;font-size:12px;color:#464646;}
+table,td{ border-collapse:collapse;}
+ul,li,dl,dt,dd,ol{ list-style:none;}
+img{ border:0 none;overflow:hidden; display:block;}
+em,i{font-style:normal;font-weight:normal;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.detail-switch-bar{
+	height: 50px;
+	background: url(static/resource/image/bg_detail_banner.png) repeat-x;
+	position: fixed;
+	top: 0px;
+    background-size: contain;
+	width: 100%;
+}
+.detail-switch-bar table{
+    width:100%;
+    line-height:44px;
+    font-size:15px;
+    margin-left:8px;
+}
+.detail-switch-bar-button{
+    font-size:17px;
+    color:#3598dc;
+}
+.detail-container{
+
+}
+.detail-switch-list{
+	height: 100%;
+	width: 100%;
+    text-align: center;
+    background-color: #f5f5f5
+	}
+.detail-switch-ul{
+    margin:0 auto;
+    width: 94%;
+	}
+.detail-switch-li{
+	min-height: 50px;
+	width: 100%;
+	text-align:initial;
+	margin-bottom: 8px;
+	background-color: white;
+	-webkit-box-shadow: 1px 2px 1px #d3d2d2;
+    padding-bottom:4px;
+
+}
+.detail-switch-title{
+	/* [disabled]font-weight: bold; */
+	color: #ababab;
+	font-size: 16px;
+    margin-left:8px;
+	}
+.detail-switch-content{
+	margin: 10px 0 0 0px;
+	font-size: 13px;
+	color: #474747;
+    margin-left:16px;
+	}
+</style>
+</head>
+
+<body>
+<div class="detail-container">
+<div class="detail-switch-list">
+    <ul class="detail-switch-ul">
+    	<li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             样品编号
+            </p>
+            <p class="detail-switch-content">
+            ${Sample_Id}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             样品名称
+            </p>
+            <p class="detail-switch-content">
+            ${SampleName}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+            <p class="detail-switch-title">
+             规格名称
+            </p>
+            <p class="detail-switch-content">
+            ${SpecName}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             强度等级名称
+            </p>
+            <p class="detail-switch-content">
+            ${GradeName}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+            <p class="detail-switch-title">
+             收样日期
+            </p>
+            <p class="detail-switch-content">
+            ${StartDate}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             检测设备
+            </p>
+            <p class="detail-switch-content">
+            ${Equipment}
+            </p>
+        </li>    	
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             检测日期
+            </p>
+            <p class="detail-switch-content">
+            ${DetectionDate}
+            </p>
+        </li>
+        
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             样品检测结论
+            </p>
+            <p class="detail-switch-content">
+            ${Exam_Result}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+        	<p class="detail-switch-title">
+             评定依据
+            </p>
+            <p class="detail-switch-content">
+            ${AccessRuleCode}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+            <p class="detail-switch-title">
+             检测方法   
+            </p>
+            <p class="detail-switch-content">
+            ${DetectonRule}
+            </p>
+        </li>
+        <li class="detail-switch-li">
+            <p class="detail-switch-title">
+             报告编号
+            </p>
+            <p class="detail-switch-content">
+            ${ReportID}
+            </p>
+        </li>
+        ${ParamInfo}
+    </ul>
+</div>
+</div>
+</body>
+</html>

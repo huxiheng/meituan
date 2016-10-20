@@ -1,0 +1,33 @@
+//
+// Prefix header for all source files of the 'LSTemplate' target in the 'LSTemplate' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+//#define LS_DEBUG
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+	#import "constance.h"
+    #import "LSLab.h"
+    #import "USTApi.h"
+    #import "RPAPI.h"    
+    #import "TSAPI.h"
+#import "SMAPI.h"
+    #import "CommonAPI.h"
+
+    #import "UIView+Sizes.h"
+    #import "SVProgressHUD.h"
+    #import "SVProgressHUD+LSTemplate.h"
+    #import "LoginUtil.h"
+    #import "UIImageView+WebCache.h"
+    #import "NSObject+SBJSON.h"
+
+    #import "AppMacro.h"
+#define XIESHI_PARAMS(__params) @{@"param":[__params JSONRepresentation]}
+
+#endif

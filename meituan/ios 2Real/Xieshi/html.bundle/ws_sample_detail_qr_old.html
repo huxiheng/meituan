@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<meta name="viewport" content="width=320,target-densitydpi=high-dpi,initial-scale=1, user-scalable=no"/>
+<style>
+html{ margin:0px; padding:0px;}
+body{ margin:0px; padding:0px; font-size:14px; font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif; color:#333; overflow-x:hidden;background:none;}
+a{ text-decoration:none; outline:none; color:#1aadbf;}
+a:hover{ text-decoration:none; outline:none; color:#f26d51;}
+arer{text-decoration:none;}
+a:active, a:visited{ outline:none;}
+p,ul,li,form,h1,h2,h3,h4,h5,h6,dl,dt,dd,img,div,table,td,th,input,textarea{ margin:0px; padding:0px;}
+h2,h3{font-size:14px;}
+input,textarea{font-family:微软雅黑,Microsoft YaHei,Tahoma, Geneva, sans-serif;outline:none;font-size:12px;color:#464646;}
+table,td{ border-collapse:collapse;}
+ul,li,dl,dt,dd,ol{ list-style:none;}
+img{ border:0 none;overflow:hidden; display:block;}
+em,i{font-style:normal;font-weight:normal;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.detail-content-bar{
+	height: 50px;
+	background: url(static/resource/image/bg_detail_banner.png
+	)
+	repeat;
+	top: 0px;
+	width: 100%;
+}
+.detail-container{
+    -webkit-box-shadow: 0 0 8px #aaa;
+}
+.detail-content-bar{
+    -webkit-box-shadow: 0 0 8px #aaa;
+}
+.detail-content{
+	margin-top: 17px;
+	padding: 15px 0 0 0;
+	background-color: white;
+	margin-bottom: 15px;
+	}
+.detail-content-title{
+	margin-left: 16px;
+	overflow: hidden;
+	}
+.detail-content-title-title{
+	font-size: 15px;
+	color: #afafaf;
+	}
+.detail-content-title-content{
+	font-size: 17px;
+	color: #797979;
+	}
+.detail-content-br{
+	background: url(static/resource/image/bg_info_br.png) no-repeat;
+	height: 21px;
+	margin-top: 8px;
+	background-size: 100%;
+	}
+.detail-bar{
+	margin: 0 14px 0 14px;
+	font-size: 15px;
+	line-height: 45px;
+	white-space: nowrap;
+
+
+	}
+.detail-content-bar-title{
+	color: #afafaf;
+	}
+.detail-content-bar-content{
+	color: #3899dc;
+	}
+.detail-content-bar-pass{
+	float: right;
+	font-size: 13px;
+	display: inline;
+	color: #f78b37;
+	}
+.detail-content-content{
+	margin: 0 32px 0 32px;	
+	}
+.detail-content-content-title{
+	font-size: 13px;
+	color: #afafaf;
+	}
+.detail-content-content-content{
+	font-size: 13px;
+	color: #797979;
+	}
+.detail-content-p{
+	line-height: 30px;
+	}
+.detail-content-bottom{
+	/* [disabled]background: url(static/resource/image/bg_info_bottom.png) no-repeat; */
+	height: 45px;
+	width: 100%;
+	background-size: 100%;
+	border-top: 1px solid #afafaf;
+	}
+.detail-content-bottom-title{
+	color: #afafaf;
+	font-size: 13px;
+	line-height: 45px;
+	}
+.detail-bottom-left{
+	/* [disabled]width: 40%; */
+	/* [disabled]white-space: nowrap; */
+	overflow: hidden;
+	/* [disabled]float: left; */
+	display: inline-block;
+	margin-top: 1px;
+	margin-right: 14px;
+	margin-bottom: 0;
+	margin-left: 14px;
+	}
+.detail-bottom-right{
+	margin: 1px 14px 0 14px;
+	/* [disabled]width: 40%; */
+	/* [disabled]white-space: nowrap; */
+	overflow: hidden;
+	/* [disabled]float: right; */
+	display: inline-block;
+	}
+.detail-content-bottom-content{
+	font-size: 13px;
+	color: #797979;
+	}
+</style>
+</head>
+<body>
+<div class="detail-container">
+<div class="detail-content-bar">
+<p class="detail-bar"><span class="detail-content-bar-title">样品名称：</span><span class="detail-content-bar-content">${SampleName}</span>
+	<span class="detail-content-bar-pass">${Exam_Result}</span>
+</p>
+</div>
+<div class="detail-content">
+    <div class="detail-content-content">
+    <p class="detail-content-p"><span class="detail-content-content-title">检测合同登记号:</span><span class="detail-content-content-content">${Contract_SignNo}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">工地名称:</span><span class="detail-content-content-content">${ProjectName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">大类:</span><span class="detail-content-content-content">${KindName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">规格:</span><span class="detail-content-content-content">${SpecName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">备案正:</span><span class="detail-content-content-content">${Record_Certificate}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">使用部位:</span><span class="detail-content-content-content">${ProJect_Part}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">检测参数:</span><span class="detail-content-content-content">${Exam_Parameter_Cn}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">委托编号:</span><span class="detail-content-content-content">${ConSign_ID}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">检测日期:</span><span class="detail-content-content-content">${DetectonDate}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">产品标准:</span><span class="detail-content-content-content">${SampleJudge}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">报告日期:</span><span class="detail-content-content-content">${ReportDate}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">工地地址:</span><span class="detail-content-content-content">${ProjectAddress}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">委托单位:</span><span class="detail-content-content-content">${ConstructUnitName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">报建编号:</span><span class="detail-content-content-content">${BuildingReportNumber}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">施工单位:</span><span class="detail-content-content-content">${BuildUnitName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">标识编号:</span><span class="detail-content-content-content">${Sample_BsId}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">项目:</span><span class="detail-content-content-content">${ItemName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">强度/等级:</span><span class="detail-content-content-content">${GradeName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">生产厂家:</span><span class="detail-content-content-content">${Produce_Factory}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">备注:</span><span class="detail-content-content-content">${Memo}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">样品编号:</span><span class="detail-content-content-content">${Sample_ID}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">样品状态:</span><span class="detail-content-content-content">${Sample_Status}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">样品登记时间:</span><span class="detail-content-content-content">${CreateDateTime}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">报告编号:</span><span class="detail-content-content-content">${ReportNumber}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">检测单位:</span><span class="detail-content-content-content">${DetectionUnitName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">工地所属区县:</span><span class="detail-content-content-content">${AreaKey}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">监理单位:</span><span class="detail-content-content-content">${SuperviseUnitName}</span></p>
+<p class="detail-content-p"><span class="detail-content-content-title">检测单位会员编号:</span><span class="detail-content-content-content">${MemberCode}</span></p>
+    </div>
+    <div class="detail-content-bottom">
+    <p class="detail-bottom-left"><span class="detail-content-bottom-title">成型日期</span><span class="detail-content-bottom-content">${Molding_Date}</span></p>
+    <p class="detail-bottom-right"><span class="detail-content-bottom-title">龄期：</span><span class="detail-content-bottom-content">${AgeTime}</span></p>
+
+    </div>
+
+</div>
+</div>
+</body>
+</html>

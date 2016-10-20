@@ -1,0 +1,20 @@
+/* 
+  File.strings
+  Ivory
+
+  Created by 张小刚 on 13-11-7.
+  Copyright (c) 2013年 duohuo. All rights reserved.
+*/
+"The request timed out" = "网络请求超时了，可能现在网络信号不够好。";
+"Authentication needed" = "需要身份验证";
+"The request was cancelled" = "请求已取消";
+"Unable to create request (bad url?)" = "创建请求失败(url错误？)";
+"The request failed because it redirected too many times" = "该请求被重定向次数太多";
+"A connection failure occurred" = "网络请求失败，可能现在网络信号不够好。";
+"Done" = "完成";
+"of" = "/";
+
+"Last Updated" = "上次更新时间";
+"Release to load more..." = "松开开始加载";
+"Pull up to load more..." = "上拉加载更多...";
+"Loading..." = "加载中...";

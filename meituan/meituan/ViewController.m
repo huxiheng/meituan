@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     UIColor *color = [UIColor colorWithRed:213.0/256.0 green:213.0/256.0 blue:213.0/255.0 alpha:1.0];
+    NSLog(@"%@",NSHomeDirectory());
+    [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {
